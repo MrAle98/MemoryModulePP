@@ -73,7 +73,6 @@ typedef int(*Entry) ();
 
 int load() {
     /*LPVOID buffer = ReadDllFile2();*/
-
     LPVOID buffer = &buf[0];
     HMODULE hModule = nullptr;
     DWORD MemoryModuleFeatures = 0;
