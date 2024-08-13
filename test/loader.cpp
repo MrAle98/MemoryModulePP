@@ -84,7 +84,7 @@ int load() {
     }
 
     auto m = LoadLibraryMemory(buffer);
-    proc = (Entry)GetProcAddress(m, "main");
+    proc = (Entry)GetProcAddress(m, "Entry");
     proc();
     //if (!NT_SUCCESS(LdrLoadDllMemoryExW(&m1, nullptr, 0, buffer, 0, L"kernel64", nullptr))) goto end;
     //
